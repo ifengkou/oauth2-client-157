@@ -53,6 +53,11 @@ public class Oauth2Client157Application {
 		urlInfo.add("ServerPort:" + request.getServerPort());
 		urlInfo.add("LocalPort:" + request.getLocalPort());
 		urlInfo.add("RemotePort:" + request.getRemotePort());
+
+
+		urlInfo.add("serverName:"+request.getServerName());
+		urlInfo.add("schema:"+request.getScheme());
+
 		Map<String,List> returnMap = new HashMap<>(2);
 		returnMap.put("header",headerInfo);
 		returnMap.put("info",urlInfo);
