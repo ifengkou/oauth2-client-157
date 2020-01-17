@@ -21,7 +21,7 @@ import java.util.*;
 public class Oauth2Client157Application {
 
 	@RequestMapping("/print_request")
-	public Map<String,List> printRequest(HttpServletRequest request) throws JsonProcessingException {
+		public Map<String,List> printRequest(HttpServletRequest request) throws JsonProcessingException {
 
 		List<String> headerInfo = new ArrayList<>();
 		//2、获得所有的头的名称
